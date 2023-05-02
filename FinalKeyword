@@ -1,0 +1,46 @@
+Final Keyword:-
+--
+We cant modify
+Final Keyword - Variable, Method, Class
+
+Final Variable -> Cant change the value
+final int a  = 10;
+
+final method -> Cant Override
+class Animal{
+  final void eat(){
+
+  }
+}
+
+class Dog extends Animal{
+ @Override
+ void eat(){ // Compile time error
+
+  }
+}
+
+final class -> Cant extend
+
+final class Animal{
+  final void eat(){
+
+  }
+}
+
+class Dog extends Animal{ // Compile time error
+ @Override
+ void eat(){ // Compile time error
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
