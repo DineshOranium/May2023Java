@@ -1,0 +1,69 @@
+Variable: To store single data in a container
+Array: To store group of data in variable
+
+Way 1:
+int[] arr = {10,20,30,40,50};
+              0  1  2  3  4
+// Working on the basis of index
+
+Way 2:
+
+Classname ref = new Classname();
+int[] arr = new int[5];
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+arr[3] = 40;
+arr[4] = 50;
+
+Jagged Array:- = Two dimensional array = Table (Multiple rows with each row has mutliple data/cells)
+
+2D array = Multiple set of datas.
+
+Object[][] arr = {{"Vasanth", 29, "Married"}
+                  {"Dinesh", 29, "Unmarried"}
+                  {"Rajesj", 27, "Married"}};
+                  
+ Object[][] arr = new Object[3][3]; 
+ 
+ arr[0][0] = "Vasanth";
+ arr[0][1] = 29;
+ arr[0][2] = "Married";
+ 
+ arr[1][0] = "Vasanth";
+ arr[1][1] = 29;
+ arr[1][2] = "Married";
+ 
+ arr[2][0] = "Vasanth";
+ arr[2][1] = 29;
+ arr[2][2] = "Married";
+                  
+                  
+Jagged array = Each row has different no of cells
+Object[][] arr = {{"Vasanth", 29}
+                  {"Dinesh", 29, "Unmarried"}
+                  {"Rajesj"},
+                  {"Prakash", 29, "Unmarried"}};
+
+Object[][] arr = new Object[4][];
+
+arr[0] = new Object[2];
+arr[1] = new Object[3];
+arr[2] = new Object[1];
+arr[3] = new Object[3];
+
+
+ arr[0][0] = "Vasanth";
+ arr[0][1] = 29;
+
+ 
+ arr[1][0] = "Vasanth";
+ arr[1][1] = 29;
+ arr[1][2] = "Married";
+ 
+ arr[2][0] = "Vasanth";
+ 
+ 
+
+
+
