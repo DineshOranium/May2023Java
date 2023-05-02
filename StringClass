@@ -1,0 +1,242 @@
+String = Pre defined or Inbuilded Class
+java.lang package
+Immutable class = Cant change state of an object
+Non primitive data type - Cant define the range
+Working on the basis of index
+Group or sequence of characters
+Each characters has unique ASCII value
+Eg A = 65
+ a = 97
+
+String class = Predefined Methods
+
+length()
+indexOf()
+lastIndexOf()
+toUppercase()
+toLowercase()
+equals()
+compareTo()
+equalsIgnorecase()
+compareToIgnorecase()
+trim()
+concat()
+substring()
+toCharArray()
+split()
+charAt()
+replace()
+contains()
+startsWith()
+endWith()
+isEmpty()
+isBlank()
+valueOf()
+
+
+package TestScripts;
+
+public class StringDemo {
+
+	// length()
+	// length
+	public static void main(String[] args) {
+
+		String str = "OranhiumTech, hChromepet & Velachhery"; // Way1 // String literal
+
+		int l = str.length();
+
+		System.out.println("Length of str " + l);
+
+		int indexOf = str.indexOf('h');
+
+		System.out.println("Index " + indexOf);
+
+		int LindexOf = str.lastIndexOf('h');
+
+		System.out.println("Index " + LindexOf);
+
+		char charAt = str.charAt(30);
+
+		System.out.println(charAt);
+
+		String s1 = "Vasanth";
+		String s2 = "vasanth";
+
+		boolean equals = s1.equals(s2);
+
+		System.out.println(equals);
+
+		boolean equals1 = s1.equalsIgnoreCase(s2);
+
+		System.out.println(equals1);
+
+		String s1a = "DiNesh";
+		String s1b = "DineshKumar";
+
+		int c = s1a.compareTo(s1b);
+
+		if (c == 0) {
+
+			System.out.println("Equal");
+		} else {
+
+			System.out.println("Not equal");
+		}
+
+		int c1 = s1a.compareToIgnoreCase(s1b);
+
+		if (c1 == 0) {
+
+			System.out.println("Equal");
+		} else {
+
+			System.out.println("Not equal");
+		}
+
+		System.out.println(c);
+
+		String upperCase = s1a.toUpperCase();
+
+		System.out.println(upperCase);
+
+		String lowerCase = s1a.toLowerCase();
+
+		System.out.println(lowerCase);
+
+		String m1 = "Dinesh Kumar";
+
+		String substring = m1.substring(0, 6);
+
+		System.out.println(substring);
+
+		String substring2 = m1.substring(7);
+
+		System.out.println(substring2);
+
+		// leading space or edge
+		// Trailing space or edge
+
+		String m2 = " Wel come     ";
+
+		System.out.println(m2.length());
+
+		System.out.println(m2);
+
+		String trim = m2.trim();
+
+		System.out.println(trim.length());
+
+		String x = "Dinesh Oranium";
+
+		String replace = x.replace("Oranium", "Kumar");
+
+		System.out.println(replace);
+
+		String replace2 = x.replace("i", "$$$");
+
+		System.out.println(replace2);
+
+		String n1 = "Dinesh";
+		String n2 = "Kumar";
+
+		System.out.println(n1 + n2);
+
+		String concat = n1.concat(n2);
+		System.out.println(concat);
+
+		// String to array
+
+		String p1 = "Welcome";
+
+		// [W, e, l, c, o, m , e]
+
+		char[] charArray = p1.toCharArray();
+
+		for (int i = 0; i < charArray.length; i++) {
+
+			System.out.println(charArray[i]);
+		}
+
+		String p2 = "Welcome to java world";
+
+		char[] charArray2 = p2.toCharArray();
+
+		for (char ch : charArray2) {
+
+			System.out.println(ch);
+		}
+
+		String[] split = p2.split(" ");
+
+		for (String s : split) {
+
+			System.out.println(s);
+		}
+
+		String g1 = "Hi Hello world";
+
+		boolean contains = g1.contains("Hello wor");
+
+		System.out.println(contains);
+
+		boolean startsWith = g1.startsWith("Hello ");
+
+		System.out.println(startsWith);
+
+		boolean endsWith = g1.endsWith(" ld");
+
+		System.out.println(endsWith);
+
+		String q1 = " ";
+
+		boolean empty = q1.isEmpty();
+
+		System.out.println(empty);
+
+		String q2 = "D";
+
+		boolean empty2 = q2.isBlank();
+
+		System.out.println(empty2);
+
+		String e1 = "Vasanth Oranium Tech";
+
+		String replace3 = e1.replace(" ", "");
+
+		System.out.println(replace3);
+
+		int i = 10;
+
+		int i1 = 11;
+
+		System.out.println(i + i1);
+
+		String v1 = String.valueOf(i);
+
+		String v2 = String.valueOf(i1);
+
+		System.out.println(v1 + v2);
+
+		String str1 = new String("OraniumTech, Chromepet & Velachery");// Way2 // String object
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
