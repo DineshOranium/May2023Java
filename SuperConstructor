@@ -1,0 +1,21 @@
+package TestScripts;
+
+public class A {
+
+	int i;
+
+	public A(int i) {
+
+		this.i = i;
+		
+		System.out.println("Para cons");
+
+		System.out.println(this.i);
+	}
+
+	public A() {
+		System.out.println("A const");
+
+		System.out.println(i);
+	}
+}
