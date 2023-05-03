@@ -1,0 +1,91 @@
+Why String is immutability?
+
+Immutable vs Mutable
+
+Not changeable vs Changeable
+
+"IMMUTABILTY"
+
+Once the state is defined we cant chnage the state of an object = IMMUTABILITY
+
+package TestScripts;
+
+public class StringDemo2 {
+
+	// length()
+	// length
+	public static void main(String[] args) {
+		
+		String s1 = "Naveen";
+		String s2 = "Kumar";
+		String s3 = "Naveen";
+		
+		
+		
+//		String s = "Hello"; // State define
+//		
+////		String s1  = s.concat(" How are you");
+//		
+//		
+//		s = s.concat(" How are you");
+//		
+//		System.out.println(s.concat(" How are you"));
+//		
+//		System.out.println(s);
+
+	}
+
+}
+
+Memories:-
+
+Heap - Instance variable, Objects
+Stack - Reference variable, Local variable
+String constant pool - String Objects
+Class loader memory - Static var, Static method , Static block
+
+Can we able to achive mutability in Java?
+
+> StringBuffer
+> StringBuilder
+
+package TestScripts;
+
+public class StringBufferDemo {
+
+	public static void main(String[] args) {
+
+		StringBuffer s = new StringBuffer("Dinesh");
+
+		s.append(" Kumar");
+
+		System.out.println(s);
+
+		StringBuilder s1 = new StringBuilder("Dinesh");
+
+		s1.append(" Kumar");
+
+		System.out.println(s1);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
