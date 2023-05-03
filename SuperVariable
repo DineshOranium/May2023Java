@@ -1,0 +1,29 @@
+package TestScripts;
+
+public class TestA {
+	
+	int t = 10;
+
+}
+
+
+package TestScripts;
+
+public class TestA2 extends TestA {
+
+	int t = 15;
+
+	void test() {
+
+		
+		System.out.println(super.t);
+	}
+
+	public static void main(String[] args) {
+
+		TestA2 t1 = new TestA2();
+		t1.test();
+
+	}
+
+}
