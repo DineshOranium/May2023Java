@@ -1,0 +1,97 @@
+Exception - Class
+
+Exception = Its like a run time error, when it happens in our code, the remaining lines of code will
+not be processed.
+
+Why should i handle the exception?
+
+Inorder the process the entire piece of code
+
+To know where the exception happened and reason
+
+How to handle the exception ?
+
+Using Try-Catch block.
+
+Who is super class in Java?
+
+"OBJECT"
+
+"Throwable"
+
+"Exception"
+
+"RuntimeException"
+
+Arithmetic exception
+
+Excepion vs Error
+
+As a developer or Programmer or coder, if i can able to handle the issue in erither compile time or run time = Exception
+
+As a programmer, i cant able to hanlde the problem
+
+Eg: JVM fails, Stack overflow
+
+Keywords:-
+
+try
+catch
+throw
+throws
+finally
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
