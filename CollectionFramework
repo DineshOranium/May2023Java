@@ -312,3 +312,116 @@ public class UserInputClass {
 	}
 
 }
+
+
+
+Map<String, Integer> map = new HashMap<>();
+
+		map.put("Dhoni", 183);
+
+		map.put("Sachin", 200);
+
+		map.put("Rohit", 240);
+
+		map.put("Kohli", 136);
+
+		System.out.println(map);
+
+		Map<String, String> map1 = new HashMap<>();
+
+		map1.put("Dinesh", "Java");
+		map1.put("Vasanth", "sQL");
+		map1.put("Ashwin", "c++");
+
+		System.out.println(map1);
+
+		System.out.println(set);
+
+		System.out.println(list);
+
+		Set<String> keySet = map1.keySet();
+
+		Iterator<String> it1 = keySet.iterator();
+//
+//		while (it1.hasNext()) {
+//
+//			System.out.println(it1.next());
+//		}
+
+		Collection<String> values = map1.values();
+
+		for (String v : values) {
+
+			System.out.println(v);
+		}
+
+		Set<Entry<String, String>> entrySet = map1.entrySet();
+
+		entrySet.forEach(keyvalue -> System.out.println(keyvalue));
+
+		for (Entry<String, String> entry : entrySet) {
+
+			System.out.println(entry);
+		}
+
+		Iterator<Entry<String, String>> iterator = entrySet.iterator();
+
+		while (iterator.hasNext()) {
+
+			System.out.println(iterator.next());
+		}
+
+		for (Entry<String, String> entry : entrySet) {
+
+			System.out.println(entry.getKey());
+			System.out.println(entry.getValue());
+		}
+
+		while (it1.hasNext()) {
+
+			String key = it1.next();
+
+			System.out.println("I am here");
+
+			System.out.println(key);
+
+			System.out.println(map1.get(key));
+		}
+
+//		Map<String, Integer> map2 = new LinkedHashMap<>();
+//		Map<String, Integer> map2 = new HashMap<>();
+		Map<String, Integer> map2 = new HashMap<>();
+
+		// Single null key & multiple null values
+		// no Duplicate key & Duplicate values allowed
+
+		map2.put("KA", 1);
+		map2.put("BB", 2);
+		map2.put("C", 3);
+		map2.put("FDE", null);
+		map2.put(null, 1);
+
+		map2.put(null, null);
+		System.out.println(map2);
+		Map<String, Integer> map21 = new Hashtable<>();
+
+		// Single null key & multiple null values
+		// no Duplicate key & Duplicate values allowed
+
+		map21.put("KA", 1);
+		map21.put("BB", 2);
+		map21.put("C", 3);
+		map21.put("FDE", 5);
+		map21.put("Fi", null);
+
+		map21.put("Y", 11);
+		System.out.println(map21);
+		
+		// Hashtable
+		/*
+		 * Wont allow null key or null values
+		 */
+
+	}
+
+}
