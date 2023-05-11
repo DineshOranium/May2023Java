@@ -243,3 +243,72 @@ public class question2 {
 
 }
 
+package TestScripts;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserInputClass {
+
+	public static void main(String[] args) {
+
+		List<Integer> list = new ArrayList<>();
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		
+		boolean empty = list.isEmpty();
+		
+		System.out.println(empty);
+		
+		list.set(0, 300);
+		
+		list.set(1, 200);
+		
+		System.out.println(list);
+		
+		
+		List<Integer> subList = list.subList(0, 2);
+		
+		System.out.println(subList);
+		
+		// List to Array
+		
+		Object[] array = list.toArray();
+		
+		for(Object a:array) {
+			
+			System.out.println(a);
+		}
+		
+		String string = list.toString();
+		
+		System.out.println(list.size());
+		
+		System.out.println(string.length());
+		
+		
+		
+//		String s = "Dinesh Kumar";
+//		
+//		String substring = s.substring(0, 6);
+//		
+//		System.out.println(substring);
+		
+		
+//		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
