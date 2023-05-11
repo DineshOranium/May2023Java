@@ -425,3 +425,34 @@ Map<String, Integer> map = new HashMap<>();
 	}
 
 }
+	map.clear();
+
+		System.out.println(map);
+
+		boolean containsKey = map1.containsKey("Dhanraj");
+
+		System.out.println(containsKey);
+
+		boolean containsValue = map1.containsValue("Dhanraj");
+
+		System.out.println(containsValue);
+
+		boolean equals = map.equals(map1);
+
+		System.out.println(equals);
+
+		boolean empty2 = map.isEmpty();
+
+		System.out.println(empty2);
+
+		map1.remove("Vasanth", "sQL");
+
+		System.out.println(map1);
+
+		map1.replace("Dinesh", "Python");
+
+		System.out.println(map1);
+		
+		map.putAll(map2);
+		
+		System.out.println(map);
