@@ -1,0 +1,64 @@
+package interview;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+/*
+ * User input class in java
+ */
+
+public class practice {
+
+	public static void main(String[] args) throws IOException {
+
+//		String s = "Dinesh";
+
+//		InputStream s = System.in;
+//
+//		Reader reader = new InputStreamReader(s);
+//
+//		BufferedReader bufferedReader = new BufferedReader(reader);
+//
+//		System.out.println("Enter your name .....");
+//
+//		String name = bufferedReader.readLine(); // String read
+//
+//		System.out.println("Total number of characters " + name.length());
+
+		BufferedReader br = null;
+		;
+		Scanner scanner = null;
+		try {
+			br = new BufferedReader(new InputStreamReader(System.in));
+
+			scanner = new Scanner(System.in);
+
+			System.out.println("What do you want me to do...");
+
+			String name = scanner.nextLine();
+
+			System.out.println("Index of a " + name.indexOf('a'));
+
+			System.out.println("Enter the number");
+
+			int nextInt = scanner.nextInt();
+
+			System.out.println(10 + nextInt);
+
+			System.out.println("Is he marreied???");
+
+			boolean nextBoolean = scanner.nextBoolean();
+
+			System.out.println(nextBoolean);
+		}
+
+		finally {
+
+			br.close();
+
+			scanner.close();
+		}
+	}
+}
