@@ -1,0 +1,171 @@
+Core Java:-
+----
+
+General
+
+1. Why Java is a Platform independent?
+2. What is the diffference between JDK and JRE and JVM?
+3. What is heap, stack and Class loader memory?
+4. What are the different features are there in Java?
+
+OOPS (Can you explain each concepts with examples from OOPS?)
+---
+
+5. What is the difference between Method Overloading(CLP) and Overriding(RTP)? What is Polymorphism?
+6. What is the difference between Abstract class(PA) and Interface(FA)? What is Abstraction?
+7. What is Encapsulation? Why we need that? How we can implement?
+8. What is Multiple and Multi level Inheritance? What is Inheritance?
+9. Why java is not supporting Mutliple inheritance? How to achive ? Is there any way?
+10. What is Constructor?
+11. What is Constructor OL?
+12. What is Constructor chaining?
+13. Difference between this and super keyword?
+
+static Keyword:-
+---
+
+14. What is Static Keyword?
+15. What is Static Block?
+16. Why main method has static keyword?
+17. Can we overload static method or main method?
+18. Can we overirde the static method or main method?
+19. Can we use non static variable inside the static method?
+20. Can we use static variable inside the non static method?
+
+Exception handling:-
+---
+
+21. What is Exception and Exception handling?
+22. How to handle exception?
+23. What is the difference between checked (CTE) and Unchecked (RTE) exception?
+24. Difference between throw and throws keyword
+25. Can we use try without catch?
+26. Can we use try with multiple catch?
+27. Can we apply nested try catch?
+28. What is the use of finally block?
+29. How to create custom  or User defined Exception?
+30. Who is the super class of Exception class?
+
+Array:-
+---
+
+31. What is Array ?
+32. Limitation and Merits of Array in Java
+33. What is ArrayIndexOutOfBoundsException?
+34. What are the different way to iterate the array?
+
+String:-
+---
+
+35. What is String?
+36. Why Java Strings called as Immutable?
+37. What is the difference between StringBuffer and StringBuilder?
+38. Where String Object will be created when we dont use new Keyword?
+39. Where String Object will be created when we use new Keyword?
+
+
+AccessModifiers:-
+---
+
+40. Difference among public, private, default and protected
+41. difference between final, finally and finalize
+42. What is Wrapper class
+43. Why Java is not 100 percent OOP?
+
+Collection Framework:-
+---
+
+44. What is the difference between List and Set
+46. What is the difference between  ArrayList and LinkedList
+47. What is the difference between  ArrayList and Vector
+48. What is the difference between  HashSet and LinkedHashSet and TreeSet
+49. What is Map
+50. Difference between  HashMap and HashTable
+51. Difference between HashMap, LinkedHashMap and TreeMap
+52. How to iterate the map?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
