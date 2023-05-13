@@ -1,0 +1,22 @@
+package com.test;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+
+		String inputString = "Dinesh";
+
+//				String outputString = "hseniD"
+
+		String rev = "";
+
+		for (int i = inputString.length() - 1; i >= 0; i--) {
+
+			rev = rev + inputString.charAt(i);// hseniD
+
+		}
+
+		System.out.println(rev + " Kumar");
+	}
+
+}
