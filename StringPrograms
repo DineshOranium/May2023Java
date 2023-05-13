@@ -1,3 +1,6 @@
+String - Reverse.
+
+
 package com.test;
 
 public class StringReverse {
@@ -17,6 +20,358 @@ public class StringReverse {
 		}
 
 		System.out.println(rev + " Kumar");
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+
+		String inputString = "Dinesh";
+
+//				String outputString = "hseniD"
+
+		String rev = "";
+
+		char[] ch = inputString.toCharArray(); //[D, i, n, e, s, h]
+
+		for (int i = ch.length - 1; i >= 0; i--) {
+			
+			rev = rev + ch[i];
+
+		}
+
+		System.out.println(rev + " Kumar");
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// Using StringBuffer and StringBuilder
+
+	public static void main(String[] args) {
+
+		String inputString = "Dinesh";
+
+		StringBuffer br = new StringBuffer(inputString); // String to StringBuffer
+
+		br.reverse();
+
+		System.out.println(br.toString()); // StringBuffer to String
+
+		StringBuilder bur = new StringBuilder(inputString); // String to StringBuffer
+
+		bur.reverse();
+
+		System.out.println(bur.toString() + " Kumar"); // StringBuffer to String
+
+	}
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// Using StringBuffer and StringBuilder
+
+	public static void main(String[] args) {
+
+		String str = "Dinesh";
+
+		String[] sp = str.split("");
+
+		String rev = "";
+
+		for (int i = sp.length-1; i >= 0; i--) {
+
+			rev = rev + sp[i];
+
+		}
+
+		System.out.println(rev);
+
+	}
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// Using StringBuffer and StringBuilder
+
+	public static void main(String[] args) {
+
+		String str = "Dinesh Kumar Oranium";
+
+		// Output = Oranium Kumar Dinesh
+
+		String[] sp = str.split(" "); // ["Dinesh", "Kumar", "Oranium"]
+
+		String rev = "";
+
+		for (int i = sp.length - 1; i >= 0; i--) {
+
+			rev = rev + sp[i]+" ";
+		}
+		
+		System.out.println(rev.trim());
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// Using StringBuffer and StringBuilder
+
+	public static void main(String[] args) {
+
+		String str = "Dinesh Kumar Oranium";
+
+		// Output = "hseniD ramuK minarO"
+
+		String[] split = str.split(" ");
+
+		String rev = "";
+
+		for (String s : split) {
+
+			String[] sp = s.split("");
+
+			for (int i = sp.length - 1; i >= 0; i--) {
+
+				rev = rev + sp[i];
+
+			}
+			
+			rev = rev +" ";
+
+		}
+
+		System.out.println(rev);
+
+	}
+
+}
+
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String st = "Diebnnfd475585#$%$%%^";
+
+		char[] ch = st.toCharArray();// []
+
+		for (char c : ch) {
+
+			if (Character.isDigit(c)) {
+
+				System.out.print(c);
+			}
+
+		}
+
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String st = "Diebnnfd475585#$%$%%^";
+
+		char[] ch = st.toCharArray();// []
+
+		for (char c : ch) {
+
+			if (c >= 48 && c <= 57) {
+
+				System.out.print(c);
+			}
+
+		}
+
+	}
+
+}
+
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String st = "Diebnnfd475585#$%$%%^";
+
+		char[] ch = st.toCharArray();// []
+
+		for (char c : ch) {
+
+			if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122)) {
+
+				System.out.print(c);
+			}
+
+		}
+
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String st = "Diebnnfd475585#$%$%%^";
+
+		char[] ch = st.toCharArray();// []
+
+		for (char c : ch) {
+
+			if (Character.isAlphabetic(c)) {
+
+				System.out.println(c);
+			}
+
+		}
+
+	}
+
+}
+
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String st = "Diebnnfd475585#$%$%%^";
+
+		char[] ch = st.toCharArray();// []
+
+		for (char c : ch) {
+
+			if (!(Character.isAlphabetic(c) || Character.isDigit(c))) {
+
+				System.out.println(c);
+			}
+
+		}
+
+	}
+
+}
+
+package com.test;
+
+public class StringReverse {
+
+	// number (digit), alpha, Special character
+
+	// Character.isDigit(char)
+
+	public static void main(String[] args) {
+
+		String s1 = "Dinesh";
+
+		String s2 = "Kumar";
+		
+		// s1 = Kumar
+		// s2 = Dinesh
+		
+		// Third varibale
+		
+		String s3 = "";
+		
+		
+		s3 = s1; // Dinesh
+		
+		s1 = s2; // Kumar
+		
+		s2 = s3; // Dinesh
+		
+		System.out.println(s1);
+		
+		System.out.println(s2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+package com.test;
+
+public class StringReverse {
+
+	// substring
+
+	public static void main(String[] args) {
+
+		String s1 = "Dinesh";
+
+		String s2 = "Kumar";
+
+		s1 = s1 + s2; // DineshKumar
+
+		// s1 DineshKumar
+		// s2 Kumar
+
+		s2 = s1.substring(0, s1.length() - s2.length()); // Dinesh
+
+		// s1 = DineshKumar
+		// s2 = Dinesh
+
+		s1 = s1.substring(s2.length());
+
+		System.out.println(s1);
+		System.out.println(s2);
+
 	}
 
 }
